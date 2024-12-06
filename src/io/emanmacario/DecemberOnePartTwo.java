@@ -36,5 +36,4 @@ public class DecemberOnePartTwo {
             e.printStackTrace();
         }
     }
-
 }
