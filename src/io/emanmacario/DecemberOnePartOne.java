@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 public class DecemberOnePartOne {
 
     public static void main(String[] args) {
-        String filePath = "src\\io\\emanmacario\\nums.txt";
+        String filePath = "src\\resources\\dec01.txt";
 
         PriorityQueue<Integer> p1 = new PriorityQueue<>();
         PriorityQueue<Integer> p2 = new PriorityQueue<>();

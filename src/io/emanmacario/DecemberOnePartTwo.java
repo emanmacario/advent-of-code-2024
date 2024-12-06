@@ -7,7 +7,7 @@ import java.util.*;
 
 public class DecemberOnePartTwo {
     public static void main(String[] args) {
-        String filePath = "src\\io\\emanmacario\\nums.txt";
+        String filePath = "src\\resources\\dec01.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             List<Integer> left = new ArrayList<>();
@@ -27,10 +27,8 @@ public class DecemberOnePartTwo {
                     counts.put(secondInt, currentCount + 1);
                 }
             }
-
             Integer total = 0;
             for (Integer n: left) {
-                System.out.println("Left: " + n + " Count: " + counts.get(n));
                 total += n * counts.getOrDefault(n, 0);
             }
             System.out.println("Total: " + total);
